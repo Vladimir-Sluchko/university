@@ -1,20 +1,17 @@
-package dao.api;
+package service.api;
 
 import dto.Student;
 
 import java.util.List;
 
-public interface IStudentDao extends ICRUDao<Student,Integer>{
-    @Override
-    Student create(Student student);
+public interface IStudentService {
+    void create(Student student);
 
-    @Override
     List<Student> getAll();
 
-    @Override
     Student update(Integer id, Student student);
 
-    @Override
     void delete(Integer id);
+
     Student getById(Integer id);
 }

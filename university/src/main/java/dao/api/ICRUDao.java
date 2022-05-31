@@ -4,7 +4,7 @@ import java.util.List;
 
 public interface ICRUDao<T,ID> {
     T create (T item);
-    List<T> get();
-    T update(ID id,T iteam);
+    List<T> getAll();
+    T update(ID id,T item);
     void delete(ID id);
 }
